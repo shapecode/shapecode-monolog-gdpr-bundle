@@ -1,0 +1,56 @@
+{
+    "name": "shapecode/monolog-gdpr-bundle",
+    "description": "Some Monolog processors that will help in relation to the security requirements under GDPR.",
+    "keywords": [
+        "log",
+        "monolog",
+        "logger",
+        "processor",
+        "gdpr",
+        "dsgvo",
+        "privacy",
+        "shapecode",
+        "symfony",
+        "bundle"
+    ],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "homepage": "https://github.com/shapecode/monolog-gdpr-bundle",
+    "support": {
+        "email": "support@shapeocode.de",
+        "issues": "https://github.com/shapecode/monolog-gdpr-bundle/issues",
+        "source": "https://github.com/shapecode/monolog-gdpr-bundle/releases",
+        "wiki": "https://github.com/shapecode/monolog-gdpr-bundle/wiki"
+    },
+    "authors": [
+        {
+            "name": "Nikita Loges",
+            "homepage": "https://loges.software",
+            "email": "software@nikita-loges.de"
+        }
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+
+        "symfony/framework-bundle": "~2.8|~3.0|~4.0",
+        "symfony/dependency-injection": "~2.8|~3.0|~4.0",
+        "symfony/http-kernel": "~2.8|~3.0|~4.0",
+        "symfony/config": "~2.8|~3.0|~4.0",
+        "symfony/monolog-bundle": "~2.12|~3.0",
+
+        "egeniq/monolog-gdpr": "~1.0",
+        "monolog/monolog": "~1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shapecode\\Bundle\\MonologGDPRBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
