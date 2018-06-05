@@ -1,1 +1,19 @@
 services:
+    shapecode_gdpr.logger.clear_user_context:
+        class: Shapecode\Bundle\MonologGDPRBundle\Monolog\ClearUserContextProcessor
+        tags:
+            - { name: monolog.processor, method: processRecord }
+
+    shapecode_gdpr.logger.redact_email:
+        class: Shapecode\Bundle\MonologGDPRBundle\Monolog\RedactEmailProcessor
+        calls:
+            - ['setSalt', ['%secret%']]
+        tags:
+            - { name: monolog.processor, method: processRecord }
+
+    shapecode_gdpr.logger.redact_ip:
+        class: Shapecode\Bundle\MonologGDPRBundle\Monolog\RedactIpProcessor
+        calls:
+            - ['setSalt', ['%secret%']]
+        tags:
+            - { name: monolog.processor, method: processRecord }

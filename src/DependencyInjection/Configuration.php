@@ -1,6 +1,6 @@
 <?php
 
-namespace Shapecode\Bundle\ShapecodeMonologGDPRBundle\DependencyInjection;
+namespace Shapecode\Bundle\MonologGDPRBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -8,7 +8,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 /**
  * Class Configuration
  *
- * @package Shapecode\Bundle\ShapecodeMonologGDPRBundle\DependencyInjection
+ * @package Shapecode\Bundle\MonologGDPRBundle\DependencyInjection
  * @author  Nikita Loges
  */
 class Configuration implements ConfigurationInterface

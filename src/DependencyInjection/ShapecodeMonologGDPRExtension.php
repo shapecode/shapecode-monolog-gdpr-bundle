@@ -1,6 +1,6 @@
 <?php
 
-namespace Shapecode\Bundle\ShapecodeMonologGDPRBundle\DependencyInjection;
+namespace Shapecode\Bundle\MonologGDPRBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 /**
  * Class ShapecodeMonologGDPRExtension
  *
- * @package Shapecode\Bundle\ShapecodeMonologGDPRBundle\DependencyInjection
+ * @package Shapecode\Bundle\MonologGDPRBundle\DependencyInjection
  * @author  Nikita Loges
  */
 class ShapecodeMonologGDPRExtension extends ConfigurableExtension
