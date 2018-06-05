@@ -1,0 +1,1 @@
+swiftmailer-impersonate-plugin-bundle
