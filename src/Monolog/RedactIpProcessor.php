@@ -18,8 +18,8 @@ class RedactIpProcessor extends AbstractProcessor
      */
     public function processRecord(array $record)
     {
-        // serialise to a JSON string so we can scan the entire tree
-        $serialised = json_encode($record);
+        return $record;
+        $serialised = serialize($record);
 
         $filtered = preg_replace_callback(
             "/(\b\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3}\b)/",
@@ -30,7 +30,7 @@ class RedactIpProcessor extends AbstractProcessor
         );
 
         if ($filtered) {
-            return json_decode($filtered, true);
+            $record = unserialize($filtered);
         }
 
         return $record;

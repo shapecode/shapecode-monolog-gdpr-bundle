@@ -18,8 +18,8 @@ class RedactEmailProcessor extends AbstractProcessor
      */
     public function processRecord(array $record)
     {
-        // serialise to a JSON string so we can scan the entire tree
-        $serialised = json_encode($record);
+        return $record;
+        $serialised = serialize($record);
 
         $filtered = preg_replace_callback(
             "/([a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`\"\"{|}~-]+)*(@|\sat\s)(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(\.|\"\"\sdot\s))+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)/",
@@ -30,7 +30,7 @@ class RedactEmailProcessor extends AbstractProcessor
         );
 
         if ($filtered) {
-            return json_decode($filtered, true);
+            return unserialize($filtered);
         }
 
         return $record;
