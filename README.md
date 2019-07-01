@@ -1,9 +1,12 @@
 # Shapecode Monolog GDPR Bundle
 
-[![Latest Stable Version](https://poser.pugx.org/shapecode/monolog-gdpr-bundle/v/stable)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
-[![Total Downloads](https://poser.pugx.org/shapecode/monolog-gdpr-bundle/downloads)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
-[![Latest Unstable Version](https://poser.pugx.org/shapecode/monolog-gdpr-bundle/v/unstable)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
-[![License](https://poser.pugx.org/shapecode/monolog-gdpr-bundle/license)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
+[![paypal](https://img.shields.io/badge/Donate-Paypal-blue.svg)](http://paypal.me/nloges)
+
+[![PHP Version](https://img.shields.io/packagist/php-v/shapecode/monolog-gdpr-bundle.svg)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
+[![Latest Stable Version](https://img.shields.io/packagist/v/shapecode/monolog-gdpr-bundle.svg?label=stable)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
+[![Latest Unstable Version](https://img.shields.io/packagist/vpre/shapecode/monolog-gdpr-bundle.svg?label=unstable)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
+[![Total Downloads](https://img.shields.io/packagist/dt/shapecode/monolog-gdpr-bundle.svg)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
+[![License](https://img.shields.io/packagist/l/shapecode/monolog-gdpr-bundle.svg)](https://packagist.org/packages/shapecode/monolog-gdpr-bundle)
 
 ## Install
 
